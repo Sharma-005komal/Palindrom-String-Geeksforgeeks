@@ -1,0 +1,21 @@
+//All test cases passed
+int isPalindrome(char S[])
+{
+    // Your code goes here
+    int n = strlen(S);
+    int i = 0;
+    int j = n-1;
+    while(i < j)
+    {
+        if(S[i] == S[j])
+        {
+            i++;
+            j--;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
